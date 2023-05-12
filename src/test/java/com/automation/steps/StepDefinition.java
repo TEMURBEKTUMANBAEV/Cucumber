@@ -22,5 +22,4 @@ public class StepDefinition {
     public void verify_user_is_on_home_page() {
 
     }
-
 }
