@@ -14,12 +14,13 @@ public class StepDefinition {
     public void verify_user_is_on_login_page() {
 
     }
-    @When("user enters valid credentials")
-    public void user_enters_valid_credentials() {
-
+    @When("user ether valid credentials")
+    public void userEtherValidCredentials() {
     }
     @Then("verify user is on home page")
     public void verify_user_is_on_home_page() {
 
     }
+
+
 }
