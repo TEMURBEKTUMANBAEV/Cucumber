@@ -22,4 +22,40 @@ public class StepDefinition {
     public void verify_user_is_on_home_page() {
 
     }
+
+    @Given("User is on the product page")
+    public void userIsOnTheProductPage() {
+
+    }
+
+    @When("User clicks on the add to cart button")
+    public void userClicksOnTheAddToCartButton() {
+
+    }
+
+    @Then("Item should be added to cart")
+    public void itemShouldBeAddedToCart() {
+
+    }
+
+    @Given("User is on the cart page")
+    public void userIsOnTheCartPage() {
+
+    }
+
+    @When("User clicks on the remove button")
+    public void userClicksOnTheRemoveButton() {
+    }
+
+    @Then("Item should be removed from the cart")
+    public void itemShouldBeRemovedFromTheCart() {
+    }
+
+    @When("User clicks on the continue shopping button")
+    public void userClicksOnTheContinueShoppingButton() {
+    }
+
+    @Then("User should be navigated to the home page.")
+    public void userShouldBeNavigatedToTheHomePage() {
+    }
 }
