@@ -1,5 +1,6 @@
 package com.automation.steps;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -60,5 +61,43 @@ public class StepDefinition {
 
     @Then("User should be navigated to the home page.")
     public void userShouldBeNavigatedToTheHomePage() {
+    }
+
+    @When("user enters valid credentials")
+    public void userEntersValidCredentials() {
+
+    }
+
+    @Given("user is on login page")
+    public void userIsOnLoginPage() {
+
+    }
+
+    @When("user clicks on add to cart button of any random item")
+    public void userClicksOnAddToCartButtonOfAnyRandomItem() {
+    }
+
+    @And("click on cart icon")
+    public void clickOnCartIcon() {
+    }
+
+    @Then("verify user is on cart page")
+    public void verifyUserIsOnCartPage() {
+    }
+
+    @And("verify item details on the cart page")
+    public void verifyItemDetailsOnTheCartPage() {
+    }
+
+    @When("user click on continue shopping button")
+    public void userClickOnContinueShoppingButton() {
+    }
+
+    @When("user click on remove button of item")
+    public void userClickOnRemoveButtonOfItem() {
+    }
+
+    @Then("verify user is removed from the cart")
+    public void verifyUserIsRemovedFromTheCart() {
     }
 }
