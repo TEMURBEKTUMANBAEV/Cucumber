@@ -12,5 +12,5 @@ Feature: Cart Page Functionality
     When User clicks on the continue shopping button
     Then User should be navigated to the home page.
 
-    
+
 

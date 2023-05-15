@@ -23,6 +23,9 @@ public class StepDefinition {
 
     }
 
+
+
+
     @Given("User is on the product page")
     public void userIsOnTheProductPage() {
 
