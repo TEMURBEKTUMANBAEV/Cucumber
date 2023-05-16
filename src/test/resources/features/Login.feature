@@ -1,42 +1,28 @@
-Feature: Login
-  As a user
-  I want to be able to log in
-  So that I can access my account
+Feature: Verify Login Feature
 
-  Scenario: Successful login
-    Given I am on the login page
-    When I enter my username and password
-    And I click the login button
-    Then I should see the dashboard page
+  Background:
+    Given user opens the website
+    And verify user is on login page
 
-  Scenario: Login with incorrect password
-    Given I am on the login page
-    When I enter my username and an incorrect password
-    And I click the login button
-    Then I should see an error message
+  @smoke @tima
+  Scenario: Verify user can login with valid credentials
+    When user enters username "admin" and password "admin@123"
+    Then verify user is on home page
 
-  Scenario: Login with incorrect username
-    Given I am on the login page
-    When I enter an incorrect username and my password
-    And I click the login button
-    Then I should see an error message
+  @regression
+  Scenario Outline: Verify user can login with invalid credentials
+    When user enters username "<username>" and password "<password>"
+    Then verify user could not access home page
 
-  Scenario: Login with empty credentials
-    Given I am on the login page
-    When I leave the username and password fields blank
-    And I click the login button
-    Then I should see an error message
+    Examples:
+      | username | password |
+      | demo     | demo@123 |
+      |          |          |
+      | ADMIN    | ADMIN@123|
+      | admin    | demo@123 |
+      | demo     | admin@123|
 
-  Scenario: Login with empty username
-    Given I am on the login page
-    When I leave the username field blank
-    And I enter my password
-    And I click the login button
-    Then I should see an error message
-
-  Scenario: Login with empty password
-    Given I am on the login page
-    When I enter my username
-    And I leave the password field blank
-    And I click the login button
-    Then I should see an error message
+  @smoke
+  Scenario: Verify user can login by copy/paste valid credentials
+    When user copy paste valid credentials
+    Then verify user is on home page

@@ -173,4 +173,18 @@ public class StepDefinition {
     @And("I leave the password field blank")
     public void iLeaveThePasswordFieldBlank() {
     }
+
+    @When("user enters username {string} and password {string}")
+    public void userEntersUsernameAndPassword(String username, String password) {
+        System.out.println("Login with username " + username);
+        System.out.println("Login with password " + password);
+    }
+
+    @Then("verify user could not access home page")
+    public void verifyUserCouldNotAccessHomePage() {
+    }
+
+    @When("user copy paste valid credentials")
+    public void userCopyPasteValidCredentials() {
+    }
 }
