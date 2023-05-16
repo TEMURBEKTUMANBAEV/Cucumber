@@ -1,11 +1,24 @@
 package com.automation.steps;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class StepDefinition {
+    @Before
+    public void setUp(){
+
+    }
+
+    @After
+    public void cleanUp(){
+
+    }
+
+
     @Given("user open the website")
     public void user_open_the_website() {
         
@@ -99,5 +112,17 @@ public class StepDefinition {
 
     @Then("verify user is removed from the cart")
     public void verifyUserIsRemovedFromTheCart() {
+    }
+
+    @Given("user opens the website")
+    public void userOpensTheWebsite() {
+    }
+
+    @When("user clicks on remove button of item")
+    public void userClicksOnRemoveButtonOfItem() {
+    }
+
+    @Then("verify item is removed from the cart")
+    public void verifyItemIsRemovedFromTheCart() {
     }
 }
