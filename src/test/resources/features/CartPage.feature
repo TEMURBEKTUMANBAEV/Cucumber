@@ -14,12 +14,6 @@ Feature: Verify Cart Page Functionality
     And verify item details on the cart page
 
   Scenario: Verify continue shopping button navigates user on home page
-    Given user opens the website
-    And verify user is on login page
-    When user enters valid credentials
-    Then verify user is on home page
-    When user clicks on add to cart button of any random item
-    And click on cart icon
     When user click on continue shopping button
     Then verify user is on home page
 
