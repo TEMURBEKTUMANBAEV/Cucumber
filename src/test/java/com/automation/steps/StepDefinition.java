@@ -125,4 +125,52 @@ public class StepDefinition {
     @Then("verify item is removed from the cart")
     public void verifyItemIsRemovedFromTheCart() {
     }
+
+    @Given("I am on the login page")
+    public void iAmOnTheLoginPage() {
+    }
+
+    @When("I enter my username and password")
+    public void iEnterMyUsernameAndPassword() {
+    }
+
+    @And("I click the login button")
+    public void iClickTheLoginButton() {
+    }
+
+    @Then("I should see the dashboard page")
+    public void iShouldSeeTheDashboardPage() {
+    }
+
+    @When("I enter my username and an incorrect password")
+    public void iEnterMyUsernameAndAnIncorrectPassword() {
+    }
+
+    @Then("I should see an error message")
+    public void iShouldSeeAnErrorMessage() {
+    }
+
+    @When("I enter an incorrect username and my password")
+    public void iEnterAnIncorrectUsernameAndMyPassword() {
+    }
+
+    @When("I leave the username and password fields blank")
+    public void iLeaveTheUsernameAndPasswordFieldsBlank() {
+    }
+
+    @When("I leave the username field blank")
+    public void iLeaveTheUsernameFieldBlank() {
+    }
+
+    @And("I enter my password")
+    public void iEnterMyPassword() {
+    }
+
+    @When("I enter my username")
+    public void iEnterMyUsername() {
+    }
+
+    @And("I leave the password field blank")
+    public void iLeaveThePasswordFieldBlank() {
+    }
 }
