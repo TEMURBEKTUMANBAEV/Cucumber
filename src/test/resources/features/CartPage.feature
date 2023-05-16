@@ -1,7 +1,7 @@
 Feature: Verify Cart Page Functionality
 
 
-  Scenario: Verify user can add item to cart
+  Background:
     Given user opens the website
     And verify user is on login page
     When user enters valid credentials
@@ -9,6 +9,8 @@ Feature: Verify Cart Page Functionality
     When user clicks on add to cart button of any random item
     And click on cart icon
     Then verify user is on cart page
+
+  Scenario: Verify user can add item to cart
     And verify item details on the cart page
 
   Scenario: Verify continue shopping button navigates user on home page
