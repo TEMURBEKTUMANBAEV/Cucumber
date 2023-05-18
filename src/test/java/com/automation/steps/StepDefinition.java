@@ -8,6 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.datatable.DataTable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class StepDefinition {
@@ -216,6 +217,6 @@ public class StepDefinition {
 
     @And("validate following data on checkout page")
     public void validateFollowingDataOnCheckoutPage(DataTable dt) {
-
+        List<Package> listOfListOfData = new ArrayList<>();
     }
 }
