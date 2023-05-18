@@ -32,4 +32,5 @@ Feature: Verify Cart Page Functionality
       | Moldova    |
       | Ukraine    |
       | Bangladesh |
-
+    When user click on checkout buutton
+    Then veerify checkout page displayed
