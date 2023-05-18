@@ -6,6 +6,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.datatable.DataTable;
 
 import java.util.List;
 
@@ -191,7 +192,11 @@ public class StepDefinition {
     }
 
     @And("verify dropdown has following values")
-    public void verifyDropdownHasFollowingValues(List<String> countries) {
+    public void verifyDropdownHasFollowingValues(DataTable dt) {
+
+        List<String> countries = dt.asList();
+
+
         for(String country : countries){
             System.out.println(country);
         }
