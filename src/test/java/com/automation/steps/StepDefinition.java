@@ -224,6 +224,8 @@ public class StepDefinition {
             for(String cookie : packet){
                 System.out.println(cookie + " ");
             }
+            System.out.print(packet.get(0)+" ");
+            System.out.print(packet.get(1)+" ");
             System.out.println();
         }
     }
