@@ -20,3 +20,16 @@ Feature: Verify Cart Page Functionality
   Scenario: Verify user can remove the item from cart
     When user clicks on remove button of item
     Then verify item is removed from the cart
+
+  Scenario: Verify user can see  country dropdown
+    Then verify user dropdown displayed on cart page
+    And verify dropdown has following values
+      | India      |
+      | USA        |
+      | Germany    |
+      | Canada     |
+      | Kyrgyzstan |
+      | Moldova    |
+      | Ukraine    |
+      | Bangladesh |
+

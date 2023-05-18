@@ -7,6 +7,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import java.util.List;
+
 public class StepDefinition {
     @Before
     public void setUp(){
@@ -186,5 +188,16 @@ public class StepDefinition {
 
     @When("user copy paste valid credentials")
     public void userCopyPasteValidCredentials() {
+    }
+
+    @And("verify dropdown has following values")
+    public void verifyDropdownHasFollowingValues(List<String> countries) {
+        for(String country : countries){
+            System.out.println(country);
+        }
+    }
+
+    @And("verify user dropdown displayed on cart page")
+    public void verifyUserDropdownDisplayedOnCartPage() {
     }
 }
