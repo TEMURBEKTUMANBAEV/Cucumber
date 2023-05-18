@@ -205,4 +205,17 @@ public class StepDefinition {
     @And("verify user dropdown displayed on cart page")
     public void verifyUserDropdownDisplayedOnCartPage() {
     }
+
+    @When("user click on checkout button")
+    public void userClickOnCheckoutButton() {
+    }
+
+    @Then("verify user is on checkout page")
+    public void verifyUserIsOnCheckoutPage() {
+    }
+
+    @And("validate following data on checkout page")
+    public void validateFollowingDataOnCheckoutPage(DataTable dt) {
+
+    }
 }
