@@ -217,6 +217,14 @@ public class StepDefinition {
 
     @And("validate following data on checkout page")
     public void validateFollowingDataOnCheckoutPage(DataTable dt) {
-        List<Package> listOfListOfData = new ArrayList<>();
+        List<List<String>> listOfListOfData = dt.asLists();
+
+
+        for(List<String> packet : listOfListOfData){
+            for(String cookie : packet){
+                System.out.println(cookie + " ");
+            }
+            System.out.println();
+        }
     }
 }

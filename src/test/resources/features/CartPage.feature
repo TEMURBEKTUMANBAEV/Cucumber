@@ -1,10 +1,10 @@
 Feature: Verify Cart Page Functionality
 
 # This is my comment
-  Background:
+  Background:Execute steps before each scenario
     Given user opens the website
     And verify user is on login page
-    When user enters valid credentials
+    When user enters username "admin" and password "admin@123"
     Then verify user is on home page
     When user clicks on add to cart button of any random item
     And click on cart icon
